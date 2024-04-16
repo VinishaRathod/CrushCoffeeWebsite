@@ -1,0 +1,264 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    /* overflow-x: hidden; */
+  }
+  *{
+    box-sizing: border-box;
+  }
+  
+  nav {
+    background-color:none;
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    width: 100%;
+    z-index: 1; /* Ensures the nav bar is on top */
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  nav ul li {
+    float: left;
+  }
+  
+  nav ul li a {
+    display: block;
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    padding: 14px 16px;
+    margin-right: 23px;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    border-bottom: 3px white solid;
+    color: white;
+  }
+  
+  .video-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  #video-bg {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    width: 100%;
+    min-height: 100%;
+    object-fit:contain;
+    transform: translatex(-50%);
+    overflow-x:hidden ;
+  }
+  .video-content{
+    position: absolute;
+    top:80%;
+    left: 34%;
+    color: white;
+    text-align: center; 
+    font-size: larger;
+  }
+  .video-content h1{
+    margin: 0; 
+    line-height: 1.1;
+  }
+  .video-content span{
+    font-size: 45px;
+    letter-spacing: 5px;
+  }
+  .container{
+    background-color: rgb(24,28,24);
+    padding-top: 270px ;
+    padding-bottom: 180px;
+  }
+  .banner-container{
+    display: flex;
+    flex-direction:row;
+    color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .banner-container div{
+    width:55%;
+  }
+  .content-right{
+    display: flex;
+    width: 45%;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    padding-left: 100px;
+  }
+  .content-right h2{
+    font-size: 35px;
+    line-height: 1.5;
+    margin-top: 0;
+  }
+  .content-right p{
+    letter-spacing:2px;
+    line-height: 1.4;
+  }
+  .content-right button{
+    margin-top:20px ;
+    width:23%;
+    height: 8%;
+    border:white 2px solid;
+    color: white;
+    background-color: rgb(24,28,24);
+  }
+  .outlet-container{
+     background-color: rgb(24,28,24);
+  }
+  .outlet-container h2{
+    color: white;
+    text-align: center;
+    margin-top: 0;
+    font-size: 35px;
+  }
+  .outlet-imgs{
+    padding: 0px 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .outlet-imgs img{
+    padding: 10px;
+    
+  }
+  .products-container{
+    background-color: rgb(24,28,24);
+    padding-top: 65px;
+  }
+  .products-container h2{
+    color: white;
+    text-align: center;
+    margin-top: 0px;
+    font-size: 35px;
+  }
+  .products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .flip-box {
+    background-color: transparent;
+    width: 260px;
+    height: 300px;
+    border: 0px solid #f1f1f1;
+    perspective: 1000px;
+  }
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-box:hover .flip-box-inner {
+    transform: rotateX(360deg);
+  }
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-box-front {
+    background-color: #bbb;
+    color: white;
+  }
+  
+  .flip-box-back{
+    background-color: #555;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  .Freppino{
+    background-image: url(images/Freppino.jpeg);
+    background-size: cover;
+  }
+  .hot-coffee{
+    background-image: url(images/Hot\ Coffee.webp);
+    background-size: cover;
+  }
+  .shake{
+    background-image: url(images/Shake.jpg);
+    background-size: cover;
+  }
+  .crusher{
+    background-image: url(images/Crusher.jpeg);
+    background-size: cover;
+  }
+  .sandwitch{
+      background-image: url(images/Sandwitch.webp);
+      background-size: cover;
+  }
+  .pizza{
+    background-image: url(images/Pizza.jpg);
+    background-size: cover;
+  }
+  .burger{
+    background-image: url(images/Burger.webp);
+    background-size: cover;
+  }
+  .French-fries{
+    background-image: url(images/FrenchFries.jpg);
+    background-size: cover;
+  }
+  .testimonials{
+    background-color: rgb(24,28,24);
+    padding-top: 100px;
+  }
+  .testimonials h2{
+    color: white;
+    text-align: center;
+    font-size: 35px;
+  }
+  .testimonial-container{
+    padding-left:  40px;
+    padding-right: 40px;
+    padding-bottom: 15%;
+  }
+  .footer{
+    padding:  5%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background-color: #242A24;
+    color: white;
+  }
+   .footer .footer-links{
+    display: flex;
+    flex-direction:column;
+  }
+  .footer .footer-links a{
+    text-decoration: none;
+    color: white;
+  }
+  .copyright-content, .useful-links, .contact-us, .address-area{
+    width: 25%;
+    line-height: 1.5rem;
+  }
+  .copyright-content h3 , .useful-links h3, .contact-us h3, .address-area h3{
+    padding-bottom: 20px;
+  }
+
+  
